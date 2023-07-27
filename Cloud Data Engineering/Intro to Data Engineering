@@ -1,17 +1,15 @@
-My understanding as of now: 
-
 Data Engineering - getting, transforming and delivering data consumers
 Data Consumers - business decision makers, data scientists, front line users
-Data Engineers - people who do the engineering; build pipeline; transform the data like cleaning/formatting
+Data Engineers - people who do the engineering; build pipeline; transform the data like cleaning/formatting, basically make the data usable
 Data Pipeline - how the data gets from source, transformed, and made available to users
 
 Cloud Data Engineering: 
 Previously data engineering was done in on-prem data centers, maybe via Hadoop, which is open source software that distributed storage and processsing
 jobs in hardware/datacenters. 
-Now in the cloud data storage and processing can be done more efficiently with less resources dedicated to the storage and management of the data. 
+Now, in the cloud, data storage and processing can be done more efficiently with less resources dedicated to the storage and management of the data. 
 
 Cloud Stuff: 
-Containers - software package that contain what you need to run an app.
+Containers - software packages that contain what you need to run an app.
 Microservices - apps built in a modular fashion that breaks up processes into microservices?
 CI/CD - so far all I have on this is that it stands for continuous integration/continuous delivery
 
