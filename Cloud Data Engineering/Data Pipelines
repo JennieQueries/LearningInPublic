@@ -1,0 +1,25 @@
+Recap: Data Pipeline - how the data gets from source, transformed, and made available to users
+
+Pipelines should be able to ingest and transform data without hogging resources and impacting performance, should be flexible to a point with what languages can be used, 
+should be able to handle both batch and streamed data. Is that so much to ask?!
+Steps in pipeline: Ingestion, transformation, delivery
+
+1. Data ingestion: pulls data from source(s) and can be time consuming. Most orgs use data ingestion tools to automate this to avoid having to create and document custom APIs, 
+especially when data is streamed. 
+
+Sidenote, what is an IoT sensor? According to le google, Zipit Wireless "IoT sensors are pieces of hardware that detect changes in an environment and collect data. 
+They're the pieces of an IoT ecosystem that bridge the digital world to the physical world."
+
+2. Transforming Data prepares raw data for consumption/analysis.
+  -standardizing: resolving any format issues
+  -cleansing: remove inaccuracies, duplicates, inconsistencies
+  -mapping: combining data from 2+ data models
+  -augmenting: adding in data from sources, maybe external or environmental data?
+
+Data Pipeline design depends on the existing source database and the tools available to the team. This seems to vary by business org in larger companies. 
+ETL: extract, transform, load: limits possibilities if you only load the transformed data.
+ELT: extract, load, transform: allow data scientists greater flexibility when determining how to use data because it's available in raw form, but can be costly in terms of storage.
+
+3. Data Delivery: makes the data available to consumers. Traditional API/FTP can be costly as data gets stale and must be manually refreshed which can create multiple copies.
+of data to govern securely, yikes. Cloud data storage can allow users to securely access read-only data, no copies created, and singular governance based on user role. This 
+eliminates data movement, eliminates ETL and minimizes recurrent manual updating.
