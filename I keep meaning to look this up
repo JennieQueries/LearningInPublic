@@ -1,0 +1,11 @@
+Kubernetes: manages hosts and deploy containers to them, docker is used mostly
+Docker: platform to run containers similar to vm
+Snowflake: cloud data warehouse, separates storage and compute
+Azure Data Factory: cloud based integration service, does not store data
+
+Languages
+Go: ideal for microservices, not object oriented, 
+known for ability to run multiple tasks at once, memory management. 
+
+Hadoop: open source based on java that manages storage and processing of large amounts of data, 
+"software ecosystem"
